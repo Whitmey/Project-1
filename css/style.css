@@ -6,7 +6,7 @@ h1 {
 }
 #horseBoard {
   display: inline-block;
-  padding: 0 400px 1px 400px;
+  padding: 0 400px 1px 450px;
 }
 h2 {
   text-align: center;
@@ -42,7 +42,7 @@ h2 {
   margin-left: 565px;
   margin-bottom: 50px;
 }
-#input {
+#bet {
   float: right;
   margin-right: 565px;
   margin-top: 23px;

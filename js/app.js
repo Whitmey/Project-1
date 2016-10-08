@@ -42,6 +42,14 @@ document.getElementById("horse5").addEventListener('click', function() {
   result();
 });
 
+document.getElementById("nextRace").addEventListener("click", function() {
+  assignOdds();
+});
+document.getElementById("reset").addEventListener("click", function() {
+  balance = 1000;
+  document.getElementById("balance").innerHTML = balance;
+});
+
 
 var randomNumber;
 var random = function() {
@@ -50,7 +58,7 @@ var random = function() {
 
 
 var oddsGenerator = function() {
-  return "Odds: " + Math.floor((Math.random() * 10) + 1);
+  return Math.floor((Math.random() * 10) + 1);
 };
 
 
@@ -73,14 +81,41 @@ var findWinner = function() {
   }
 };
 
+
 var result = function() {
   if (winner === horseChosen) {
-    document.getElementById("result").innerHTML = "Your horse came first and you won" + betAmount;
-    balance = parseInt(balance) + parseInt(betAmount);
-    console.log(balance);
-    document.getElementById("balance").innerHTML = balance;//add the bet amount to the balance.
+      if (horseChosen === "horse1") {
+        var oddsN = document.getElementById("odds1").innerHTML;
+        document.getElementById("result").innerHTML = "Your horse came first and you won" + (betAmount * oddsN);
+        balance = parseInt(balance) + parseInt(betAmount * oddsN);
+        document.getElementById("balance").innerHTML = balance;//add the bet amount to the balance.
+      }
+      else if (horseChosen === "horse2") {
+        var oddsN = document.getElementById("odds2").innerHTML;
+        document.getElementById("result").innerHTML = "Your horse came first and you won" + (betAmount * oddsN);
+        balance = parseInt(balance) + parseInt(betAmount * oddsN);
+        document.getElementById("balance").innerHTML = balance;//add the bet amount to the balance.
+      }
+      else if (horseChosen === "horse3") {
+        var oddsN = document.getElementById("odds3").innerHTML;
+        document.getElementById("result").innerHTML = "Your horse came first and you won" + (betAmount * oddsN);
+        balance = parseInt(balance) + parseInt(betAmount * oddsN);
+        document.getElementById("balance").innerHTML = balance;
+      }
+      else if (horseChosen === "horse4") {
+        var oddsN = document.getElementById("odds4").innerHTML;
+        document.getElementById("result").innerHTML = "Your horse came first and you won" + (betAmount * oddsN);
+        balance = parseInt(balance) + parseInt(betAmount * oddsN);
+        document.getElementById("balance").innerHTML = balance;
+      }
+      else if (horseChosen === "horse5") {
+        var oddsN = document.getElementById("odds5").innerHTML;
+        document.getElementById("result").innerHTML = "Your horse came first and you won" + (betAmount * oddsN);
+        balance = parseInt(balance) + parseInt(betAmount * oddsN);
+        document.getElementById("balance").innerHTML = balance;
+    }
   }
-  else {
+  else if (winner !== horseChosen) {
     document.getElementById("result").innerHTML = "Your horse came last and you lost" + betAmount;
     balance = parseInt(balance) - parseInt(betAmount);
     console.log(balance);

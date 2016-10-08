@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
   </head>
   <body>
-    <h1>BetterBets</h1>
+    <h1><img src="logo.png" alt="" /></h1>
       <div id="horseBoard">
         <button id="horse1">Horse 1<p id="odds1"></p></button>
         <button id="horse2">Horse 2<p id="odds2"></p></button>
@@ -16,14 +16,15 @@
     </div>
 
     <h2>Balance: £<em id='balance'></em></h2>
-    <h2>Bet Amount: £</h2>
+    <h2 id="betamount">Bet Amount: £</h2>
       <form>
         <input id="bet" type="text">
       </form>
 
     <div id="buttons">
-      <button>Next Race</button>
-      <button>Reset</button>
+      <button id="nextRace">Next Race</button>
+      <button>Race</button>
+      <button id="reset">Reset Balance</button>
     </div>
     <div id="result">Result</div>
     <script src="js/app.js" charset="utf-8"></script>
