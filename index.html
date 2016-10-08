@@ -2,9 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Project 1</title>
+    <title>BetterBets</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
   </head>
   <body>
-    <h1>Project 1</h1>
+    <h1>BetterBets</h1>
+      <div id="horseBoard">
+        <button id="horse1">Horse 1<p id="odds1"></p></button>
+        <button id="horse2">Horse 2<p id="odds2"></p></button>
+        <button id="horse3">Horse 3<p id="odds3"></p></button>
+        <button id="horse4">Horse 4<p id="odds4"></p></button>
+        <button id="horse5">Horse 5<p id="odds5"></p></button>
+    </div>
+
+    <h2>Balance: £<em id='balance'></em></h2>
+    <h2>Bet Amount: £</h2>
+      <form>
+        <input id="bet" type="text">
+      </form>
+
+    <div id="buttons">
+      <button>Next Race</button>
+      <button>Reset</button>
+    </div>
+    <div id="result">Result</div>
+    <script src="js/app.js" charset="utf-8"></script>
   </body>
 </html>

@@ -1,0 +1,50 @@
+body {
+  background-color: #A8CD1B;
+}
+h1 {
+  text-align: center;
+}
+#horseBoard {
+  display: inline-block;
+  padding: 0 400px 1px 400px;
+}
+h2 {
+  text-align: center;
+}
+#horse1, #horse2, #horse3, #horse4, #horse5{
+  height: 100px;
+  width: 100px;
+}
+#horse1 {
+  background-color: red;
+}
+#horse2 {
+  background-color: blue;
+}
+#horse3 {
+  background-color: orange;
+}
+#horse4 {
+  background-color: green;
+}
+#horse5 {
+  background-color: purple;
+}
+#buttons {
+  display: inline-block;
+  padding: 0 400px 0 620px;
+}
+#race {
+  margin: 0 100px 0 100px;
+}
+#betamount {
+  float: left;
+  margin-left: 565px;
+  margin-bottom: 50px;
+}
+#input {
+  float: right;
+  margin-right: 565px;
+  margin-top: 23px;
+  height: 16px;
+}
