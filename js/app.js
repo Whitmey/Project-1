@@ -59,16 +59,16 @@ var random = function() {
 
 var winner;
 var findWinner = function() {
-  if (randomNumber < 0.4) {
+  if (randomNumber < 0.45) {
     winner = "horse1";
   }
-  else if (randomNumber > 0.4 && randomNumber < 0.7) {
+  else if (randomNumber > 0.45 && randomNumber < 0.6) {
     winner = "horse2";
   }
-  else if (randomNumber > 0.7 && randomNumber < 0.9) {
+  else if (randomNumber > 0.6 && randomNumber < 0.77) {
     winner = "horse3";
   }
-  else if (randomNumber > 0.9 && randomNumber < 0.95) {
+  else if (randomNumber > 0.77 && randomNumber < 0.9) {
     winner = "horse4";
   }
   else {

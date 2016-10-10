@@ -23,7 +23,7 @@ h2 {
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 40px 10px 19px;
+  padding: 30px 45px 10px 19px;
   text-decoration: none;
   background-color: blue;
 }
@@ -38,7 +38,7 @@ h2 {
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 40px 10px 19px;
+  padding: 30px 45px 10px 19px;
   text-decoration: none;
   background-color: red;
 }
@@ -53,9 +53,9 @@ h2 {
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 40px 10px 19px;
+  padding: 30px 45px 10px 19px;
   text-decoration: none;
-  background-color: yellow;
+  background-color: orange;
 }
 #horse3:hover {
   background: grey;
@@ -68,7 +68,7 @@ h2 {
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 40px 10px 19px;
+  padding: 30px 45px 10px 19px;
   text-decoration: none;
   background-color: green;
 }
