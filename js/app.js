@@ -133,4 +133,4 @@ var assignOdds = function() {
 assignOdds();
 
 // write a program or adapt the find winner function so that the odds change according to how high the number is.
-// or rewrite the chosen winner program to incorporate the odds varia
+// or rewrite the chosen winner program to incorporate the odds variation.
