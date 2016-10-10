@@ -13,24 +13,82 @@ h1 {
 h2 {
   text-align: center;
 }
-#horse1, #horse2, #horse3, #horse4, #horse5{
-  height: 100px;
-  width: 100px;
-}
+
+
 #horse1 {
-  background-color: red;
-}
-#horse2 {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: white;
+  font-size: 21px;
+  background: #3498db;
+  padding: 30px 40px 10px 19px;
+  text-decoration: none;
   background-color: blue;
 }
+#horse1:hover {
+  background: grey;
+}
+#horse2 {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: white;
+  font-size: 21px;
+  background: #3498db;
+  padding: 30px 40px 10px 19px;
+  text-decoration: none;
+  background-color: red;
+}
+#horse2:hover {
+  background: grey;
+}
 #horse3 {
-  background-color: orange;
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: white;
+  font-size: 21px;
+  background: #3498db;
+  padding: 30px 40px 10px 19px;
+  text-decoration: none;
+  background-color: yellow;
+}
+#horse3:hover {
+  background: grey;
 }
 #horse4 {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: white;
+  font-size: 21px;
+  background: #3498db;
+  padding: 30px 40px 10px 19px;
+  text-decoration: none;
   background-color: green;
 }
+#horse4:hover {
+  background: grey;
+}
 #horse5 {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: Arial;
+  color: white;
+  font-size: 21px;
+  background: #3498db;
+  padding: 30px 40px 10px 19px;
+  text-decoration: none;
   background-color: purple;
+}
+#horse5:hover {
+  background: grey;
 }
 #buttons {
   display: inline-block;
@@ -42,11 +100,34 @@ h2 {
 #betamount {
   float: left;
   margin-left: 565px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  margin-top: 0px
 }
 #bet {
   float: right;
   margin-right: 565px;
-  margin-top: 23px;
+  margin-top: 0px;
   height: 16px;
+}
+#result {
+  text-align: center;
+  font-size: 50px;
+}
+#ad1 {
+  width: 400px;
+}
+#ad2 {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  width: 200px
+}
+#ad3 {
+}
+#buttons {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.block {
+  display: inline-block;
 }

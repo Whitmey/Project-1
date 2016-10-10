@@ -57,23 +57,18 @@ var random = function() {
 }
 
 
-var oddsGenerator = function() {
-  return Math.floor((Math.random() * 10) + 1);
-};
-
-
 var winner;
 var findWinner = function() {
-  if (randomNumber < 0.2) {
+  if (randomNumber < 0.4) {
     winner = "horse1";
   }
-  else if (randomNumber > 0.2 && randomNumber < 0.4) {
+  else if (randomNumber > 0.4 && randomNumber < 0.7) {
     winner = "horse2";
   }
-  else if (randomNumber > 0.4 && randomNumber < 0.6) {
+  else if (randomNumber > 0.7 && randomNumber < 0.9) {
     winner = "horse3";
   }
-  else if (randomNumber > 0.6 && randomNumber < 0.8) {
+  else if (randomNumber > 0.9 && randomNumber < 0.95) {
     winner = "horse4";
   }
   else {
@@ -124,11 +119,11 @@ var result = function() {
 };
 
 var assignOdds = function() {
-  document.getElementById("odds1").innerHTML = oddsGenerator();
-  document.getElementById("odds2").innerHTML = oddsGenerator();
-  document.getElementById("odds3").innerHTML = oddsGenerator();
-  document.getElementById("odds4").innerHTML = oddsGenerator();
-  document.getElementById("odds5").innerHTML = oddsGenerator();
+  document.getElementById("odds1").innerHTML = 2;
+  document.getElementById("odds2").innerHTML = 4;
+  document.getElementById("odds3").innerHTML = 6;
+  document.getElementById("odds4").innerHTML = 8;
+  document.getElementById("odds5").innerHTML = 10;
 };
 assignOdds();
 
