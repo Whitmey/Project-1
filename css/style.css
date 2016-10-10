@@ -1,5 +1,4 @@
 body {
-  background-color: #A8CD1B;
   font-family: 'Gentium Basic', serif;
 }
 h1 {
@@ -118,20 +117,23 @@ h2 {
   margin-right: 50px;
   border-style: solid;
   border-width: 3px;
-  border-color: black;
+  border-color: white;
+  color: white;
 }
 #ad2 {
   border-style: solid;
   border-width: 3px;
-  border-color: black;
+  border-color: white;
   width: 200px
   margin-left: 50px;
+  color: white;
 }
 #ad3 {
   float: right;
   border-style: solid;
   border-width: 3px;
-  border-color: black;
+  border-color: white;
+  color: white;
 }
 #buttons {
   padding-top: 0px;
