@@ -58,7 +58,7 @@ var random = function() {
 
 
 var oddsGenerator = function() {
-  return Math.floor((Math.random() * 5) + 1);
+  return Math.floor((Math.random() * 10) + 1);
 };
 
 
@@ -124,13 +124,13 @@ var result = function() {
 };
 
 var assignOdds = function() {
-  document.getElementById("odds1").innerHTML = oddsGenerator() + "/1";
-  document.getElementById("odds2").innerHTML = oddsGenerator() + "/1";
-  document.getElementById("odds3").innerHTML = oddsGenerator() + "/1";
-  document.getElementById("odds4").innerHTML = oddsGenerator() + "/1";
-  document.getElementById("odds5").innerHTML = oddsGenerator() + "/1";
+  document.getElementById("odds1").innerHTML = oddsGenerator();
+  document.getElementById("odds2").innerHTML = oddsGenerator();
+  document.getElementById("odds3").innerHTML = oddsGenerator();
+  document.getElementById("odds4").innerHTML = oddsGenerator();
+  document.getElementById("odds5").innerHTML = oddsGenerator();
 };
 assignOdds();
 
 // write a program or adapt the find winner function so that the odds change according to how high the number is.
-// or rewrite the chosen winner program to incorporate the odds variation.
+// or rewrite the chosen winner program to incorporate the odds varia
