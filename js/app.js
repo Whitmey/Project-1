@@ -82,6 +82,9 @@ var result = function() {
       if (horseChosen === "horse1") {
         var oddsN = document.getElementById("odds1").innerHTML;
         document.getElementById("result").innerHTML = "1st! You won £" + (betAmount * oddsN);
+        $( "button" ).click(function() {
+          $( "#result" ).show( "slow" );
+        });
         balance = parseInt(balance) + parseInt(betAmount * oddsN);
         document.getElementById("balance").innerHTML = balance;//add the bet amount to the balance.
       }
@@ -130,3 +133,13 @@ assignOdds();
 
 // write a program or adapt the find winner function so that the odds change according to how high the number is.
 // or rewrite the chosen winner program to incorporate the odds variation.
+
+$(document).ready(function(){
+  $("#fadeIn").click(function(){
+    $("#result").fadeIn(3000);
+    $("#balance").fadeIn(2500);
+    $("#result").fadeOut(3000);
+
+    console.log("clicked");
+  });
+});
