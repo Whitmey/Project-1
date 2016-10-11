@@ -51,7 +51,7 @@ function checkForWinner() {
   }
   winningHorse = winner;
   showResult();
-}
+};
 
 document.getElementById("race").addEventListener("click", race);
 
