@@ -3,6 +3,7 @@ body {
 }
 h1 {
   text-align: center;
+  height: 170px;
 }
 #horseBoard {
   display: inline-block;
@@ -13,16 +14,14 @@ h2 {
   text-align: center;
 }
 
-
 #horse1 {
   -webkit-border-radius: 11;
-  -moz-border-radius: 11;
   border-radius: 11px;
   font-family: Arial;
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 45px 10px 19px;
+  padding: 10px 45px 10px 19px;
   text-decoration: none;
   background-color: blue;
 }
@@ -31,13 +30,12 @@ h2 {
 }
 #horse2 {
   -webkit-border-radius: 11;
-  -moz-border-radius: 11;
   border-radius: 11px;
   font-family: Arial;
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 45px 10px 19px;
+  padding: 10px 45px 10px 19px;
   text-decoration: none;
   background-color: red;
 }
@@ -46,13 +44,12 @@ h2 {
 }
 #horse3 {
   -webkit-border-radius: 11;
-  -moz-border-radius: 11;
   border-radius: 11px;
   font-family: Arial;
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 45px 10px 19px;
+  padding: 10px 45px 10px 19px;
   text-decoration: none;
   background-color: orange;
 }
@@ -61,13 +58,12 @@ h2 {
 }
 #horse4 {
   -webkit-border-radius: 11;
-  -moz-border-radius: 11;
   border-radius: 11px;
   font-family: Arial;
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 45px 10px 19px;
+  padding: 10px 45px 10px 19px;
   text-decoration: none;
   background-color: green;
 }
@@ -76,13 +72,12 @@ h2 {
 }
 #horse5 {
   -webkit-border-radius: 11;
-  -moz-border-radius: 11;
   border-radius: 11px;
   font-family: Arial;
   color: white;
   font-size: 21px;
   background: #3498db;
-  padding: 30px 40px 10px 19px;
+  padding: 10px 40px 10px 19px;
   text-decoration: none;
   background-color: purple;
 }
@@ -147,4 +142,5 @@ h3 {
 }
 #result {
   text-align: center;
+  color: #99ff99;
 }
