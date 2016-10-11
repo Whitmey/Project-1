@@ -3,6 +3,7 @@
 var horseChosen;
 var betAmount;
 var balance = 100;
+var horses = document.querySelectorAll(".horse");
 document.getElementById("balance").innerHTML = balance;
 
 
@@ -144,6 +145,7 @@ assignOdds();
 
 $(document).ready(function(){
   $("#fadeIn").click(function(){
+    myMove();
     $("#result").fadeIn(3000);
     $("#balance").fadeIn(2500);
     $("#result").fadeOut(2000);
@@ -151,3 +153,31 @@ $(document).ready(function(){
     console.log("clicked");
   });
 });
+
+function myMove() {
+
+  var id = setInterval(frame, 10);
+
+  function frame() {
+    for(var i=0;i<horses.length;i++) {
+      var pos = parseFloat(horses[i].style.left || 0) + Math.round(parseFloat(horses[i].dataset.odds) + (Math.random()*10));
+      horses[i].style.left = pos + "px";
+      if (pos >= 1350) {
+        clearInterval(id);
+        checkForWinner();
+      }
+    }
+  }
+};
+
+
+function checkForWinner() {
+  var winner = horses[0];
+
+  for(var i=0;i<horses.length;i++) {
+    var finalPos = parseFloat(horses[i].style.left);
+    if(finalPos > parseFloat(winner.style.left)) winner = horses[i];
+  }
+
+  console.log(winner.textContent, Array.prototype.indexOf.call(horses, winner));
+}

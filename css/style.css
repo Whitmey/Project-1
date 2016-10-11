@@ -144,3 +144,32 @@ h3 {
   text-align: center;
   color: #99ff99;
 }
+
+#myContainer {
+    width: 1400px;
+    height: 220px;
+    position: absolute;
+    background: green;
+}
+.horse {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: blue;
+}
+.horse:nth-child(2) {
+    top: 40px;
+    background: red;
+}
+.horse:nth-child(3) {
+    background: orange;
+    top: 80px;
+}
+.horse:nth-child(4) {
+    background: green;
+    top: 120px;
+}
+.horse:nth-child(5) {
+    background: purple;
+    top: 160px;
+}
