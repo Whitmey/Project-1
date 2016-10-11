@@ -33,7 +33,7 @@ function race() {
 
   function frame() {
     for(var i=0;i<horses.length;i++) {
-      var pos = parseFloat(horses[i].style.left || 0) + Math.round(parseFloat(horses[i].dataset.odds) + (Math.random()*10));
+      var pos = parseFloat(horses[i].style.left || 0) + Math.round(parseFloat(horses[i].dataset.odds) + (Math.random()*2));
       horses[i].style.left = pos + "px";
       if (pos >= 1350) {
         clearInterval(id);
