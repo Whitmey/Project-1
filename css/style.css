@@ -14,7 +14,7 @@ h2 {
   text-align: center;
 }
 
-#horse1 {
+#horseBoard button {
   -webkit-border-radius: 11;
   border-radius: 11px;
   font-family: Arial;
@@ -23,67 +23,30 @@ h2 {
   background: #3498db;
   padding: 10px 45px 10px 19px;
   text-decoration: none;
-  background-color: blue;
+  background: blue;
 }
-#horse1:hover {
+
+#horseBoard button:nth-child(2) {
+    top: 40px;
+    background: red;
+}
+#horseBoard button:nth-child(3) {
+    background: orange;
+    top: 80px;
+}
+#horseBoard button:nth-child(4) {
+    background: green;
+    top: 120px;
+}
+#horseBoard button:nth-child(5) {
+    background: purple;
+    top: 160px;
+}
+
+#horseBoard button:hover {
   background: grey;
 }
-#horse2 {
-  -webkit-border-radius: 11;
-  border-radius: 11px;
-  font-family: Arial;
-  color: white;
-  font-size: 21px;
-  background: #3498db;
-  padding: 10px 45px 10px 19px;
-  text-decoration: none;
-  background-color: red;
-}
-#horse2:hover {
-  background: grey;
-}
-#horse3 {
-  -webkit-border-radius: 11;
-  border-radius: 11px;
-  font-family: Arial;
-  color: white;
-  font-size: 21px;
-  background: #3498db;
-  padding: 10px 45px 10px 19px;
-  text-decoration: none;
-  background-color: orange;
-}
-#horse3:hover {
-  background: grey;
-}
-#horse4 {
-  -webkit-border-radius: 11;
-  border-radius: 11px;
-  font-family: Arial;
-  color: white;
-  font-size: 21px;
-  background: #3498db;
-  padding: 10px 45px 10px 19px;
-  text-decoration: none;
-  background-color: green;
-}
-#horse4:hover {
-  background: grey;
-}
-#horse5 {
-  -webkit-border-radius: 11;
-  border-radius: 11px;
-  font-family: Arial;
-  color: white;
-  font-size: 21px;
-  background: #3498db;
-  padding: 10px 40px 10px 19px;
-  text-decoration: none;
-  background-color: purple;
-}
-#horse5:hover {
-  background: grey;
-}
+
 #buttons {
   display: inline-block;
   padding: 0 400px 0 620px;
@@ -143,6 +106,7 @@ h3 {
 #result {
   text-align: center;
   color: #99ff99;
+  position: relative;
 }
 
 #myContainer {
@@ -151,6 +115,13 @@ h3 {
     position: absolute;
     background: green;
 }
+#Harambe {
+  width: 280px;
+}
+#MickyGinger {
+  width: 220px;
+}
+
 .horse {
     width: 30px;
     height: 30px;
@@ -166,7 +137,7 @@ h3 {
     top: 80px;
 }
 .horse:nth-child(4) {
-    background: green;
+    background: white;
     top: 120px;
 }
 .horse:nth-child(5) {
