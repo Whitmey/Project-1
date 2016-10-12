@@ -36,7 +36,7 @@ h2 {
     top: 80px;
 }
 #horseBoard button:nth-child(4) {
-    background: green;
+    background: black;
     top: 120px;
 }
 #horseBoard button:nth-child(5) {
@@ -145,7 +145,7 @@ h2 {
     top: 80px;
 }
 .horse:nth-child(4) {
-    background: white;
+    background: black;
     top: 120px;
 }
 .horse:nth-child(5) {
