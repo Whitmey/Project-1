@@ -11,19 +11,14 @@ var resetBtn = document.getElementById("reset");
 
 balanceElem.innerHTML = balance;
 
-for(var i=0;i<horseButtons.length;i++) {
+for(var i=0;i<horseButtons.length;i++) { // Set the users choice to the variable.
   horseButtons[i].addEventListener('click', function() {
     horseChosen = this.id;
-    betAmount = parseFloat(bet.value); // Get the amount of money bet and assign it to the variable
+    betAmount = parseFloat(bet.value); // Get the bet amount from the input box and set it to the variable.
   });
 }
 
-resetBtn.addEventListener("click", function() {
-  balance = 100;
-  balanceElem.innerHTML = balance;
-});
-
-function race() {
+function race() { // Race the divs according to a random number and their odds added together.
 
   var id = setInterval(frame, 10);
 
@@ -31,7 +26,7 @@ function race() {
     horses[i].style.left = "";
   }
 
-  function frame() {
+  function frame() { // This function adds pixels to the left of each div in order to move it across the screen.
     for(var i=0;i<horses.length;i++) {
       var pos = parseFloat(horses[i].style.left || 0) + Math.round(parseFloat(horses[i].dataset.odds) + (Math.random()*2));
       horses[i].style.left = pos + "px";
@@ -43,7 +38,7 @@ function race() {
   }
 };
 
-function checkForWinner() {
+function checkForWinner() { // Set the winner to a variable
   var winner = horses[0];
   for(var i=0;i<horses.length;i++) {
     var finalPos = parseFloat(horses[i].style.left);
@@ -55,7 +50,7 @@ function checkForWinner() {
 
 document.getElementById("race").addEventListener("click", race);
 
-function showResult() {
+function showResult() { // Take the winninghorse variable and check that it is the same as the user chosen horse.
   if (winningHorse.innerHTML === horseChosen) {
     var factor = parseFloat(winningHorse.dataset.factor);
     var winnings = betAmount * factor;
@@ -69,3 +64,8 @@ function showResult() {
   }
   balanceElem.innerHTML = balance;
 };
+
+resetBtn.addEventListener("click", function() { // Click to reset the balance.
+  balance = 100;
+  balanceElem.innerHTML = balance;
+});
